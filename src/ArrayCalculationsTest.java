@@ -25,7 +25,7 @@ public class ArrayCalculationsTest {
         assertEquals(23, ArrayCalculations.rowSum(arr, 1));
 
     }
-/*
+
     @Test
     public void columnSum() {
         assertEquals(190, ArrayCalculations.columnSum(arr2, 2));
@@ -40,7 +40,7 @@ public class ArrayCalculationsTest {
     public void columnSumBadHigh() {
         assertEquals(-1, ArrayCalculations.columnSum(arr2, arr2.length));
     }
-
+/*
     @Test
     public void diagonalSumUp() {
         assertEquals(-32, ArrayCalculations.diagonalSum(arr3, 1));
