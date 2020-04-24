@@ -27,13 +27,11 @@ public class Hailstone {
      * and false otherwise, as described in part (b).
      * Precondition: n > 0
      */
-    public static boolean isLongSeq(int n, int y) {
+    public static boolean isLongSeq(int n) {
         /* to be implemented in part (b) */
         boolean x = false;
-        if(y>n){
+        if(hailstoneLength(n)>n){
             x = true;
-        }else{
-            x = false;
         }
         return x;
     }
@@ -43,14 +41,17 @@ public class Hailstone {
      * as described in part (c).
      * Precondition: n > 0
      */
-    public static double propLong(int n,int y) {
+    public static double propLong(int n) {
         /* to be implemented in part (c) */
-        double c = 0;
-        if(isLongSeq(n, y) == true){
-            c++;
-
+        double d = 0.0;
+        int c = 0;
+        for(int i = 0; i<= n; i++) {
+            if (isLongSeq(n)) {
+                c++;
+            }
+            d = (double) c/n;
         }
-        return c;
+        return d;
 
     }
 
