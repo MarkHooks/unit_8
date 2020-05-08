@@ -36,7 +36,7 @@ public class StringManip
         if(removeSpaces(str).equals(reverseString(removeSpaces(str)))){
             System.out.println(str +" this is a palindrome");
         }else{
-            System.out.println(str + " this is not a palindrome");
+            System.out.println(str + " this is not a palindrome ");
         }
     }
 }
